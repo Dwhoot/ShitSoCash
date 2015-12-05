@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Settings-->
         <scene sceneID="IMJ-g1-zxg">
             <objects>
                 <viewController id="od7-mN-jCE" customClass="SSCSettingsViewController" sceneMemberID="viewController">
@@ -48,6 +48,7 @@
                                 <state key="normal" title="Hourly"/>
                                 <connections>
                                     <action selector="Hourly:" destination="od7-mN-jCE" eventType="touchUpInside" id="Fcl-l1-6CK"/>
+                                    <action selector="hourlyButtonTapped:" destination="od7-mN-jCE" eventType="touchUpInside" id="euB-71-9db"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3u2-Q7-5Zh">
@@ -56,6 +57,7 @@
                                 <state key="normal" title="Weekly"/>
                                 <connections>
                                     <action selector="Weekly:" destination="od7-mN-jCE" eventType="touchUpInside" id="sAp-di-UUG"/>
+                                    <action selector="weeklyButtonTapped:" destination="od7-mN-jCE" eventType="touchUpInside" id="mAS-JY-ZES"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4S-3L-qU9">
@@ -64,6 +66,7 @@
                                 <state key="normal" title="Monthly"/>
                                 <connections>
                                     <action selector="Monthly:" destination="od7-mN-jCE" eventType="touchUpInside" id="Jp9-NV-h4F"/>
+                                    <action selector="monthlyButtonTapped:" destination="od7-mN-jCE" eventType="touchUpInside" id="rOj-WO-mU8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKT-pf-xvK">
@@ -72,6 +75,7 @@
                                 <state key="normal" title="Yearly"/>
                                 <connections>
                                     <action selector="Yearly:" destination="od7-mN-jCE" eventType="touchUpInside" id="9cx-j2-acE"/>
+                                    <action selector="yearlyButtonTapped:" destination="od7-mN-jCE" eventType="touchUpInside" id="xZo-Bl-laU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -84,10 +88,14 @@
                             <constraint firstItem="3u2-Q7-5Zh" firstAttribute="centerX" secondItem="EHL-ty-ggp" secondAttribute="centerX" id="jY0-yb-JDG"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="KiJ-xz-wpL"/>
+                    <tabBarItem key="tabBarItem" title="Settings" id="KiJ-xz-wpL"/>
                     <connections>
+                        <outlet property="Hourly" destination="Q3v-7V-esF" id="b93-w7-6ig"/>
                         <outlet property="HourlyRate" destination="tW1-at-gHl" id="vum-71-55n"/>
+                        <outlet property="Monthly" destination="n4S-3L-qU9" id="zGi-6j-tN7"/>
                         <outlet property="Rate" destination="tW1-at-gHl" id="abA-5T-fdj"/>
+                        <outlet property="Weekly" destination="3u2-Q7-5Zh" id="qCF-PQ-KnG"/>
+                        <outlet property="Yearly" destination="xKT-pf-xvK" id="JDP-ak-rpR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="obf-e4-RKJ" userLabel="First Responder" sceneMemberID="firstResponder"/>

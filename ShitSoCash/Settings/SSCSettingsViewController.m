@@ -10,12 +10,20 @@
 
 @import SafariServices;
 
-
-
 @interface SSCSettingsViewController ()
 
-@property (strong, nonatomic) IBOutlet UITextField *HourlyRate;
+typedef enum {
+    SSCHourly, // == 0
+    SSCWeekly, // == 1
+    SSCMonthly, // == 2
+    SSCYearly // == 3
+}SSCTimePeriod;
 
+@property (strong, nonatomic) IBOutlet UITextField *HourlyRate;
+@property (strong, nonatomic) IBOutlet UIButton * Hourly;
+@property (strong, nonatomic) IBOutlet UIButton * Weekly;
+@property (strong, nonatomic) IBOutlet UIButton * Monthly;
+@property (strong, nonatomic) IBOutlet UIButton * Yearly;
 
 
 @end
@@ -27,9 +35,51 @@
     // Do any additional setup after loading the view.
 }
 
-- (IBAction)WebsiteLink:(UIButton *)sender;
+- (IBAction)WebsiteLink:(UIButton *)sender
+{
+    
+}
 
+- (IBAction)hourlyButtonTapped:(id)sender
+{
+    // Now we know the hourly button got tapped.
+}
 
+- (IBAction)weeklyButtonTapped:(id)sender
+{
+    [self figureHourlyRateFromString:self.HourlyRate.text WithTimePeriod:SSCWeekly];
+}
+
+- (IBAction)monthlyButtonTapped:(id)sender
+{
+    
+}
+
+- (IBAction)yearlyButtonTapped:(id)sender
+{
+    
+}
+
+- (void)figureHourlyRateFromString:(NSString *)stringRate WithTimePeriod:(SSCTimePeriod)timePeriod
+{
+    switch (timePeriod) {
+        case SSCHourly:
+            // Do what we want
+            
+            break;
+        case SSCWeekly:
+            
+            break;
+        case SSCMonthly:
+            
+            break;
+        case SSCYearly:
+            
+            break;
+        default:
+            break;
+    }
+}
 
 /*
 #pragma mark - Navigation
