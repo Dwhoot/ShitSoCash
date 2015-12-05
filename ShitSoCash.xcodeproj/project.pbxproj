@@ -18,6 +18,8 @@
 		F4F723EA1C127477006FE369 /* ShitSoCashUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F723E91C127477006FE369 /* ShitSoCashUITests.m */; };
 		F4F723F91C127F21006FE369 /* SSCPoopListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F723F81C127F21006FE369 /* SSCPoopListViewController.m */; };
 		F4F723FD1C128043006FE369 /* SSCListPoopCollectionViewDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F723FC1C128043006FE369 /* SSCListPoopCollectionViewDataController.m */; };
+		F4F724011C129489006FE369 /* SSCPoopListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F724001C129489006FE369 /* SSCPoopListCollectionViewCell.m */; };
+		F4F724041C12A2F6006FE369 /* SSCPoopEventObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F724031C12A2F6006FE369 /* SSCPoopEventObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,10 @@
 		F4F723FB1C128043006FE369 /* SSCListPoopCollectionViewDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSCListPoopCollectionViewDataController.h; path = ListAndAdd/SSCListPoopCollectionViewDataController.h; sourceTree = "<group>"; };
 		F4F723FC1C128043006FE369 /* SSCListPoopCollectionViewDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSCListPoopCollectionViewDataController.m; path = ListAndAdd/SSCListPoopCollectionViewDataController.m; sourceTree = "<group>"; };
 		F4F723FE1C1280AF006FE369 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F4F723FF1C129489006FE369 /* SSCPoopListCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSCPoopListCollectionViewCell.h; path = ListAndAdd/SSCPoopListCollectionViewCell.h; sourceTree = "<group>"; };
+		F4F724001C129489006FE369 /* SSCPoopListCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSCPoopListCollectionViewCell.m; path = ListAndAdd/SSCPoopListCollectionViewCell.m; sourceTree = "<group>"; };
+		F4F724021C12A2F6006FE369 /* SSCPoopEventObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSCPoopEventObject.h; path = Model/SSCPoopEventObject.h; sourceTree = "<group>"; };
+		F4F724031C12A2F6006FE369 /* SSCPoopEventObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSCPoopEventObject.m; path = Model/SSCPoopEventObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,8 @@
 				F4F723C11C127477006FE369 /* Supporting Files */,
 				F4F723FA1C127FFA006FE369 /* ListAndAddPoop */,
 				F4F723FE1C1280AF006FE369 /* PrefixHeader.pch */,
+				F4F724021C12A2F6006FE369 /* SSCPoopEventObject.h */,
+				F4F724031C12A2F6006FE369 /* SSCPoopEventObject.m */,
 			);
 			path = ShitSoCash;
 			sourceTree = "<group>";
@@ -167,6 +175,8 @@
 				F4F723F81C127F21006FE369 /* SSCPoopListViewController.m */,
 				F4F723FB1C128043006FE369 /* SSCListPoopCollectionViewDataController.h */,
 				F4F723FC1C128043006FE369 /* SSCListPoopCollectionViewDataController.m */,
+				F4F723FF1C129489006FE369 /* SSCPoopListCollectionViewCell.h */,
+				F4F724001C129489006FE369 /* SSCPoopListCollectionViewCell.m */,
 			);
 			name = ListAndAddPoop;
 			sourceTree = "<group>";
