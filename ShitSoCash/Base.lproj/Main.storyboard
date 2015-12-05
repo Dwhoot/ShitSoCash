@@ -8,7 +8,7 @@
         <!--Item 2-->
         <scene sceneID="IMJ-g1-zxg">
             <objects>
-                <viewController id="od7-mN-jCE" sceneMemberID="viewController">
+                <viewController id="od7-mN-jCE" customClass="SSCSettingsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oUQ-9J-aED"/>
                         <viewControllerLayoutGuide type="bottom" id="EU6-a6-QRz"/>
@@ -29,17 +29,66 @@
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="Rate:" destination="od7-mN-jCE" eventType="editingDidEnd" id="UTI-Kp-e8w"/>
+                                </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3v-7V-esF">
-                                <rect key="frame" x="200" y="87" width="200" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9f-II-CTw">
+                                <rect key="frame" x="217" y="458" width="165" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Visit our website"/>
+                                <connections>
+                                    <action selector="LoadURL:" destination="od7-mN-jCE" eventType="touchUpInside" id="Mia-NX-C8O"/>
+                                    <action selector="WebsiteLink:" destination="od7-mN-jCE" eventType="touchUpInside" id="9s1-6b-GmV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3v-7V-esF">
+                                <rect key="frame" x="82" y="87" width="100" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Hourly"/>
+                                <connections>
+                                    <action selector="Hourly:" destination="od7-mN-jCE" eventType="touchUpInside" id="Fcl-l1-6CK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3u2-Q7-5Zh">
+                                <rect key="frame" x="190" y="87" width="100" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Weekly"/>
+                                <connections>
+                                    <action selector="Weekly:" destination="od7-mN-jCE" eventType="touchUpInside" id="sAp-di-UUG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4S-3L-qU9">
+                                <rect key="frame" x="311" y="87" width="100" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Monthly"/>
+                                <connections>
+                                    <action selector="Monthly:" destination="od7-mN-jCE" eventType="touchUpInside" id="Jp9-NV-h4F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKT-pf-xvK">
+                                <rect key="frame" x="419" y="87" width="100" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Yearly"/>
+                                <connections>
+                                    <action selector="Yearly:" destination="od7-mN-jCE" eventType="touchUpInside" id="9cx-j2-acE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Q3v-7V-esF" firstAttribute="centerX" secondItem="EHL-ty-ggp" secondAttribute="centerX" id="3Me-rt-lIo"/>
+                            <constraint firstItem="n4S-3L-qU9" firstAttribute="centerX" secondItem="EHL-ty-ggp" secondAttribute="centerX" id="HQP-ao-6zj"/>
+                            <constraint firstItem="xKT-pf-xvK" firstAttribute="centerX" secondItem="EHL-ty-ggp" secondAttribute="centerX" id="cZV-CC-eIl"/>
+                            <constraint firstItem="3u2-Q7-5Zh" firstAttribute="centerX" secondItem="EHL-ty-ggp" secondAttribute="centerX" id="jY0-yb-JDG"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="KiJ-xz-wpL"/>
+                    <connections>
+                        <outlet property="HourlyRate" destination="tW1-at-gHl" id="vum-71-55n"/>
+                        <outlet property="Rate" destination="tW1-at-gHl" id="abA-5T-fdj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="obf-e4-RKJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63BA30901C129208008C94E6 /* SSCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BA308F1C129208008C94E6 /* SSCSettingsViewController.m */; };
 		F4F723C31C127477006FE369 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F723C21C127477006FE369 /* main.m */; };
 		F4F723C61C127477006FE369 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F723C51C127477006FE369 /* AppDelegate.m */; };
-		F4F723C91C127477006FE369 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F723C81C127477006FE369 /* ViewController.m */; };
 		F4F723CC1C127477006FE369 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F723CA1C127477006FE369 /* Main.storyboard */; };
 		F4F723CF1C127477006FE369 /* ShitSoCash.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4F723CD1C127477006FE369 /* ShitSoCash.xcdatamodeld */; };
 		F4F723D11C127477006FE369 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4F723D01C127477006FE369 /* Assets.xcassets */; };
@@ -38,12 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63BA308E1C129208008C94E6 /* SSCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSCSettingsViewController.h; path = Settings/SSCSettingsViewController.h; sourceTree = "<group>"; };
+		63BA308F1C129208008C94E6 /* SSCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSCSettingsViewController.m; path = Settings/SSCSettingsViewController.m; sourceTree = "<group>"; };
 		F4F723BE1C127477006FE369 /* ShitSoCash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShitSoCash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F723C21C127477006FE369 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4F723C41C127477006FE369 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F4F723C51C127477006FE369 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F4F723C71C127477006FE369 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F4F723C81C127477006FE369 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F4F723CB1C127477006FE369 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4F723CE1C127477006FE369 /* ShitSoCash.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShitSoCash.xcdatamodel; sourceTree = "<group>"; };
 		F4F723D01C127477006FE369 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63BA30911C12921A008C94E6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				63BA308E1C129208008C94E6 /* SSCSettingsViewController.h */,
+				63BA308F1C129208008C94E6 /* SSCSettingsViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		F4F723B51C127477006FE369 = {
 			isa = PBXGroup;
 			children = (
@@ -112,13 +121,12 @@
 			children = (
 				F4F723C41C127477006FE369 /* AppDelegate.h */,
 				F4F723C51C127477006FE369 /* AppDelegate.m */,
-				F4F723C71C127477006FE369 /* ViewController.h */,
-				F4F723C81C127477006FE369 /* ViewController.m */,
 				F4F723CA1C127477006FE369 /* Main.storyboard */,
 				F4F723D01C127477006FE369 /* Assets.xcassets */,
 				F4F723D21C127477006FE369 /* LaunchScreen.storyboard */,
 				F4F723D51C127477006FE369 /* Info.plist */,
 				F4F723CD1C127477006FE369 /* ShitSoCash.xcdatamodeld */,
+				63BA30911C12921A008C94E6 /* Settings */,
 				F4F723C11C127477006FE369 /* Supporting Files */,
 				F4F723FA1C127FFA006FE369 /* ListAndAddPoop */,
 				F4F723FE1C1280AF006FE369 /* PrefixHeader.pch */,
@@ -294,11 +302,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4F723CF1C127477006FE369 /* ShitSoCash.xcdatamodeld in Sources */,
-				F4F723C91C127477006FE369 /* ViewController.m in Sources */,
 				F4F723FD1C128043006FE369 /* SSCListPoopCollectionViewDataController.m in Sources */,
 				F4F723F91C127F21006FE369 /* SSCPoopListViewController.m in Sources */,
 				F4F723C61C127477006FE369 /* AppDelegate.m in Sources */,
 				F4F723C31C127477006FE369 /* main.m in Sources */,
+				63BA30901C129208008C94E6 /* SSCSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +534,7 @@
 				F4F723F01C127477006FE369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4F723F11C127477006FE369 /* Build configuration list for PBXNativeTarget "ShitSoCashTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +543,7 @@
 				F4F723F31C127477006FE369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4F723F41C127477006FE369 /* Build configuration list for PBXNativeTarget "ShitSoCashUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +552,7 @@
 				F4F723F61C127477006FE369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
