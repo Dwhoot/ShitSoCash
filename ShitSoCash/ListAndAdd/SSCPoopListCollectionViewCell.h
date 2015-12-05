@@ -11,6 +11,6 @@
 @interface SSCPoopListCollectionViewCell : UICollectionViewCell
 @property (strong, nonatomic) IBOutlet UIImageView *plusImageView;
 @property (strong, nonatomic) IBOutlet UILabel *poopDurationLabel;
-@property (strong, nonatomic) IBOutlet UILabel *moneyMadeLabel;
+@property (strong, nonatomic) IBOutlet UILabel *textLabel;
 
 @end
