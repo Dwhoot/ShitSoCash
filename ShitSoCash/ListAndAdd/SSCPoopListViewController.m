@@ -21,7 +21,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.dataController = [[SSCListPoopCollectionViewDataController alloc] init];
+    self.dataController = [[SSCListPoopCollectionViewDataController alloc] initWithSize:self.view.bounds.size];
     self.collectionView.dataSource = self.dataController;
     self.collectionView.delegate = self.dataController;
     

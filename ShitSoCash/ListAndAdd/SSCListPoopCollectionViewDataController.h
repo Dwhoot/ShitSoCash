@@ -11,4 +11,6 @@
 
 @interface SSCListPoopCollectionViewDataController : NSObject <UICollectionViewDelegate, UICollectionViewDataSource>
 
+- (instancetype)initWithSize:(CGSize)size;
+
 @end
