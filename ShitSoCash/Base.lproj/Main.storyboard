@@ -169,11 +169,6 @@
                                             <constraint firstItem="T7E-Bh-tv2" firstAttribute="leading" secondItem="bh7-nU-QVh" secondAttribute="trailing" priority="900" constant="13" id="ll2-O6-EoR"/>
                                             <constraint firstItem="LaG-bN-nei" firstAttribute="leading" secondItem="T7E-Bh-tv2" secondAttribute="trailing" constant="20" id="m9e-M2-IWe"/>
                                         </constraints>
-                                        <connections>
-                                            <outlet property="moneyMadeLabel" destination="T7E-Bh-tv2" id="F4M-YF-ozF"/>
-                                            <outlet property="plusImageView" destination="bh7-nU-QVh" id="BJn-Hj-FZo"/>
-                                            <outlet property="poopDurationLabel" destination="LaG-bN-nei" id="zcV-UU-ekQ"/>
-                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
