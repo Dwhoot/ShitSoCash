@@ -10,4 +10,18 @@
 
 @implementation SSCListPoopCollectionViewDataController
 
+
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 1;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Poop" forIndexPath:indexPath];
+    
+    return cell;
+}
+
 @end

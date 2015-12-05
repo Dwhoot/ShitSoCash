@@ -28,7 +28,7 @@
         <!--Item 1-->
         <scene sceneID="2Zn-nN-DM0">
             <objects>
-                <viewController id="2Gz-Ho-lzA" sceneMemberID="viewController">
+                <viewController id="2Gz-Ho-lzA" customClass="SSCPoopListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="va8-gD-vYM"/>
                         <viewControllerLayoutGuide type="bottom" id="E1V-JT-oyy"/>
@@ -71,6 +71,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="4Pm-UE-G4w"/>
+                    <connections>
+                        <outlet property="collectionView" destination="efP-fA-TwL" id="hJI-9Y-wCw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jrU-1r-Igc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

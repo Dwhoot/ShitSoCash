@@ -7,21 +7,23 @@
 //
 
 #import "SSCPoopListViewController.h"
+#import "SSCListPoopCollectionViewDataController.h"
 
 @interface SSCPoopListViewController ()
+
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (strong, nonatomic) SSCListPoopCollectionViewDataController * dataController;
 
 @end
 
 @implementation SSCPoopListViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.dataController = [[SSCListPoopCollectionViewDataController alloc] init];
+    self.collectionView.dataSource = self.dataController;
+    self.collectionView.delegate = self.dataController;
+    
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 @end
