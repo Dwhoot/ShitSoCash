@@ -16,6 +16,8 @@
 		F4F723D41C127477006FE369 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F723D21C127477006FE369 /* LaunchScreen.storyboard */; };
 		F4F723DF1C127477006FE369 /* ShitSoCashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F723DE1C127477006FE369 /* ShitSoCashTests.m */; };
 		F4F723EA1C127477006FE369 /* ShitSoCashUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F723E91C127477006FE369 /* ShitSoCashUITests.m */; };
+		F4F723F91C127F21006FE369 /* SSCPoopListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F723F81C127F21006FE369 /* SSCPoopListViewController.m */; };
+		F4F723FD1C128043006FE369 /* SSCListPoopCollectionViewDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F723FC1C128043006FE369 /* SSCListPoopCollectionViewDataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,11 @@
 		F4F723E51C127477006FE369 /* ShitSoCashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShitSoCashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F723E91C127477006FE369 /* ShitSoCashUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShitSoCashUITests.m; sourceTree = "<group>"; };
 		F4F723EB1C127477006FE369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4F723F71C127F21006FE369 /* SSCPoopListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSCPoopListViewController.h; path = ListAndAdd/SSCPoopListViewController.h; sourceTree = "<group>"; };
+		F4F723F81C127F21006FE369 /* SSCPoopListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSCPoopListViewController.m; path = ListAndAdd/SSCPoopListViewController.m; sourceTree = "<group>"; };
+		F4F723FB1C128043006FE369 /* SSCListPoopCollectionViewDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSCListPoopCollectionViewDataController.h; path = ListAndAdd/SSCListPoopCollectionViewDataController.h; sourceTree = "<group>"; };
+		F4F723FC1C128043006FE369 /* SSCListPoopCollectionViewDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSCListPoopCollectionViewDataController.m; path = ListAndAdd/SSCListPoopCollectionViewDataController.m; sourceTree = "<group>"; };
+		F4F723FE1C1280AF006FE369 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +120,8 @@
 				F4F723D51C127477006FE369 /* Info.plist */,
 				F4F723CD1C127477006FE369 /* ShitSoCash.xcdatamodeld */,
 				F4F723C11C127477006FE369 /* Supporting Files */,
+				F4F723FA1C127FFA006FE369 /* ListAndAddPoop */,
+				F4F723FE1C1280AF006FE369 /* PrefixHeader.pch */,
 			);
 			path = ShitSoCash;
 			sourceTree = "<group>";
@@ -141,6 +150,17 @@
 				F4F723EB1C127477006FE369 /* Info.plist */,
 			);
 			path = ShitSoCashUITests;
+			sourceTree = "<group>";
+		};
+		F4F723FA1C127FFA006FE369 /* ListAndAddPoop */ = {
+			isa = PBXGroup;
+			children = (
+				F4F723F71C127F21006FE369 /* SSCPoopListViewController.h */,
+				F4F723F81C127F21006FE369 /* SSCPoopListViewController.m */,
+				F4F723FB1C128043006FE369 /* SSCListPoopCollectionViewDataController.h */,
+				F4F723FC1C128043006FE369 /* SSCListPoopCollectionViewDataController.m */,
+			);
+			name = ListAndAddPoop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +295,8 @@
 			files = (
 				F4F723CF1C127477006FE369 /* ShitSoCash.xcdatamodeld in Sources */,
 				F4F723C91C127477006FE369 /* ViewController.m in Sources */,
+				F4F723FD1C128043006FE369 /* SSCListPoopCollectionViewDataController.m in Sources */,
+				F4F723F91C127F21006FE369 /* SSCPoopListViewController.m in Sources */,
 				F4F723C61C127477006FE369 /* AppDelegate.m in Sources */,
 				F4F723C31C127477006FE369 /* main.m in Sources */,
 			);
@@ -415,6 +437,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = ShitSoCash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SSC.ShitSoCash;
@@ -426,6 +450,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = ShitSoCash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SSC.ShitSoCash;
