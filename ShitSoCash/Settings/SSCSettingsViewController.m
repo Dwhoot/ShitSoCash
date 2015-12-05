@@ -43,6 +43,7 @@ typedef enum {
 - (IBAction)hourlyButtonTapped:(id)sender
 {
     // Now we know the hourly button got tapped.
+    [self figureHourlyRateFromString:self.HourlyRate.text WithTimePeriod:SSCHourly];
 }
 
 - (IBAction)weeklyButtonTapped:(id)sender
@@ -52,33 +53,36 @@ typedef enum {
 
 - (IBAction)monthlyButtonTapped:(id)sender
 {
-    
+    [self figureHourlyRateFromString:self.HourlyRate.text WithTimePeriod:SSCMonthly];
 }
 
 - (IBAction)yearlyButtonTapped:(id)sender
 {
-    
+    [self figureHourlyRateFromString:self.HourlyRate.text WithTimePeriod:SSCYearly];
 }
 
-- (void)figureHourlyRateFromString:(NSString *)stringRate WithTimePeriod:(SSCTimePeriod)timePeriod
+- (NSUInteger)figureHourlyRateFromString:(NSString *)stringRate WithTimePeriod:(SSCTimePeriod)timePeriod
 {
+    NSString *string = self.HourlyRate.text;
+    NSUInteger value = [string intValue];
+    
     switch (timePeriod) {
         case SSCHourly:
             // Do what we want
-            
             break;
         case SSCWeekly:
-            
+            value = value / 40;
             break;
         case SSCMonthly:
-            
+            value = value / 168;
             break;
         case SSCYearly:
-            
+            value = value / 2080;
             break;
         default:
             break;
     }
+    return value;
 }
 
 /*
